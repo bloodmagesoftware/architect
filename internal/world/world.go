@@ -16,8 +16,23 @@ import (
 
 type (
 	World struct {
-		Version version.Version `toml:"version"`
-		Name    string          `toml:"-"`
+		Version    version.Version `toml:"version"`
+		Name       string          `toml:"-"`
+		Layers     []Layer         `toml:"layer"`
+		Collisions []Collision     `toml:"collision"`
+	}
+
+	Layer []Object
+
+	Object struct {
+		Texture string `toml:"texture"`
+		X       int    `toml:"x"`
+		Y       int    `toml:"y"`
+	}
+
+	Collision struct {
+		X      int `toml:"x"`
+		Y      int `toml:"y"`
 	}
 )
 

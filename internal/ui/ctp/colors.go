@@ -1,0 +1,32 @@
+package ctp
+
+import rl "github.com/gen2brain/raylib-go/raylib"
+
+var (
+	Rosewater = rl.NewColor(245, 224, 220, 255)
+	Flamingo  = rl.NewColor(242, 205, 205, 255)
+	Pink      = rl.NewColor(245, 194, 231, 255)
+	Mauve     = rl.NewColor(203, 166, 247, 255)
+	Red       = rl.NewColor(243, 139, 168, 255)
+	Maroon    = rl.NewColor(235, 160, 172, 255)
+	Peach     = rl.NewColor(250, 179, 135, 255)
+	Yellow    = rl.NewColor(249, 226, 175, 255)
+	Green     = rl.NewColor(166, 227, 161, 255)
+	Teal      = rl.NewColor(148, 226, 213, 255)
+	Sky       = rl.NewColor(137, 220, 235, 255)
+	Sapphire  = rl.NewColor(116, 199, 236, 255)
+	Blue      = rl.NewColor(137, 180, 250, 255)
+	Lavender  = rl.NewColor(180, 190, 254, 255)
+	Text      = rl.NewColor(205, 214, 244, 255)
+	Subtext1  = rl.NewColor(186, 194, 222, 255)
+	Subtext0  = rl.NewColor(166, 173, 200, 255)
+	Overlay2  = rl.NewColor(147, 153, 178, 255)
+	Overlay1  = rl.NewColor(127, 132, 156, 255)
+	Overlay0  = rl.NewColor(108, 112, 134, 255)
+	Surface2  = rl.NewColor(88, 91, 112, 255)
+	Surface1  = rl.NewColor(69, 71, 90, 255)
+	Surface0  = rl.NewColor(49, 50, 68, 255)
+	Base      = rl.NewColor(30, 30, 46, 255)
+	Mantle    = rl.NewColor(24, 24, 37, 255)
+	Crust     = rl.NewColor(17, 17, 27, 255)
+)

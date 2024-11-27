@@ -17,3 +17,7 @@ func Min(a, b float32) float32 {
 func Clamp(min, x, max float32) float32 {
 	return Max(min, Min(x, max))
 }
+
+func Floor(x float32) float32 {
+	return float32(int32(x))
+}

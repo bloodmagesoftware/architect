@@ -10,6 +10,17 @@ func drawEditor() {
 		return
 	}
 
-	wsw := int32(worldsSidebarWidth())
-	rl.DrawRectangle(wsw, 0, vwInt-wsw, vhInt, rl.Black)
+	startX := int32(worldsSidebarWidth())
+	width := vwInt - startX
+	height := vhInt - int32(atlasHeight())
+
+	rl.DrawRectangle(startX, 0, width, height, rl.Black)
+
+	x := rl.GetMouseX()
+	y := rl.GetMouseY()
+	if x >= startX && y >= 0 && x < vwInt && y < height {
+		xRel := (x - startX) / blockSizeInt
+		yInt := y / blockSizeInt
+		rl.DrawRectangle(xRel*blockSizeInt+startX, yInt*blockSizeInt, blockSizeInt, blockSizeInt, rl.Fade(rl.Gray, 0.5))
+	}
 }

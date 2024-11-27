@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+tmp/
 
 # Test binary, built with 'go test -c'
 *.test
@@ -29,3 +30,7 @@ go.work.sum
 
 # Architect
 assets/
+
+# OS
+.DS_Store
+Thumbs.db
